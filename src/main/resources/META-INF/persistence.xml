@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="manager">
+        <class>Entities.StudentEntity</class>
+        <class>Entities.EmployeesEntity</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:sqlserver://localhost:1433;database=thuchanh"/>
+            <property name="toplink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="toplink.jdbc.user" value="sa"/>
+            <property name="toplink.jdbc.password" value="anhchien2003"/>
+            <property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;database=thuchanh"/>
+            <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="hibernate.connection.username" value="sa"/>
+            <property name="hibernate.connection.password" value="anhchien2003"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:sqlserver://localhost:1433;database=thuchanh"/>
+            <property name="openjpa.ConnectionDriverName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="openjpa.ConnectionUserName" value="sa"/>
+            <property name="openjpa.ConnectionPassword" value="anhchien2003"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:sqlserver://localhost:1433;database=thuchanh"/>
+            <property name="eclipselink.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="eclipselink.jdbc.user" value="sa"/>
+            <property name="eclipselink.jdbc.password" value="anhchien2003"/>
+        </properties>
+    </persistence-unit>
+</persistence>
